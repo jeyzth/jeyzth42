@@ -1,0 +1,26 @@
+{% extends "master.jinja" %}
+
+{% block master_title %}
+Welcome to TurboGears 2.3, standing on the shoulders of giants, since 2007
+{% endblock %}
+
+
+{% block contents %}
+<form>
+  <div class="row">
+    <div class="span4"> Name    </div>
+    <div class="span4">     </div>
+    <div class="span4"> Surname    </div>
+    <div class="span4">     </div>
+    <div class="span4"> Date of bird    </div>
+    <div class="span4">     </div>
+  </div>    
+  <div class="row">
+    <div class="span4"> Bio    </div>
+    <div class="span4">     </div>
+    <div class="span4"> Contacs    </div>
+    <div class="span4">     </div>
+  </div>    
+</form>
+
+{% endblock %}
