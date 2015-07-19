@@ -15,5 +15,5 @@ def init_model(engine):
 
 # Import your model modules here.
 from jeyzth42.model.auth import User, Group, Permission
-
-__all__ = ('User', 'Group', 'Permission')
+from jeyzth42.model.task1 import TaskOne
+__all__ = ('User', 'Group', 'Permission', 'TaskOne')
