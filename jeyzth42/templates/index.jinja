@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>42</title>
+{% extends "master.jinja" %}
 
+{% block master_title %}
+Welcome to TurboGears 2.3, standing on the shoulders of giants, since 2007
+{% endblock %}
+
+
+{% block contents %}
   
   
   <style type="text/css">
@@ -55,7 +57,7 @@
 
 
   </style>
-</head><body>
+
 <div id="workspace">
 <h3> 42 Coffee Cups Test Assignment </h3>
 <div id="lcolumn">
@@ -84,9 +86,10 @@ Mobile +770101234567<br>
 </div>
 </div>
 <?python
-  hw='Hello Word!'
-  print hw
-  s = dir(t1)
+hw='Hello Word!'
+print hw
+s = dir(t1)
   
 ?>
-</body></html>
+
+{% endblock %}
