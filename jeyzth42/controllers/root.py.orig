@@ -13,7 +13,7 @@ from tgext.admin.controller import AdminController
 
 from jeyzth42.lib.base import BaseController
 from jeyzth42.controllers.error import ErrorController
-from jeyzth42.model.task1 import TaskOne
+
 __all__ = ['RootController']
 
 

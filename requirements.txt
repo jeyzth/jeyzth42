@@ -1,2 +1,2 @@
--i http://tg.gy/current
+-i http://turbogears.org
 tg.devtools
