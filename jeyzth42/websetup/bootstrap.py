@@ -7,7 +7,7 @@ from jeyzth42 import model
 def bootstrap(command, conf, vars):
     """Place any commands to setup jeyzth42 here"""
     # <websetup.bootstrap.before.auth
-    """
+    
         g = model.Group()
         g.group_name = 'managers'
         g.display_name = 'Managers Group'
@@ -29,16 +29,16 @@ def bootstrap(command, conf, vars):
         u1.display_name = 'Example editor'
         u1.email_address = 'editor@somedomain.com'
         u1.password = 'editpass'  
-    """
-    t1 = model.TaskOne()
-    t1.name = 'Evgen'
-    t1.lastname = 'Anonimov'
-    t1.dataofbird='01.01.1973'
-    t1.Bio="""I like cats, but don't like dogs. """
-    t1.email='jeyzth@gmail.com'
-    t1.jabber='jeyzth@xmpp.jp'
-    t1.skype='jeyzth'
-    t1.othr=" Phones 717123456 Mobile +77011234567"
+    
+        t1 = model.TaskOne()
+        t1.name = 'Evgen'
+        t1.lastname = 'Anonimov'
+        t1.dateofbird='01.01.1973'
+        t1.bio="""I like cats, but don't like dogs. """
+        t1.email='jeyzth@gmail.com'
+        t1.jabber='jeyzth@xmpp.jp'
+        t1.skype='jeyzth'
+        t1.othr="Phones 717123456 Mobile +77011234567"
     
     model.DBSession.flush()
     model.DBSession.clear()

@@ -44,15 +44,8 @@
     .sfields {
        color: red;
        font-weight: bold;
-       border: 2px double black;
-       margin: 2px;
-       padding: 2px; 
     }
-    li {
-       margin: 5px;
-       padding: 5px; 
 
-	}
   </style>
 
 </head>
@@ -63,9 +56,9 @@
 <h3> 42 Coffee Cups Test Assignment </h3>
 <div id="lcolumn">
 <ul>
-  <li> Name:<span class="sfields">${name} </span> </li>
-  <li> Last name:<span class="sfields">$lastname </span> </li>
-  <li> Date of Bird:<span class="sfields">$dateofbird </span> </li>
+  <li> Name:<span class="fields">$name </span> </li>
+  <li> Last name:<span class="fields">$lastname </span> </li>
+  <li> Date of Bird:<span class="fields">$dateofbird </span> </li>
   <li> Bio:
     <div id="multiline">$bio</div>
   </li>
@@ -74,9 +67,9 @@
 <div id="rcolumn">
 Contacts: 
 <ul>
-  <li> Email:<span class="sfields">${email} </span> </li>
-  <li> Jabber: <span class="sfields">$jid </span> </li>
-  <li> Skype: <span class="sfields">$lskype</span> </li>
+  <li> Email:<span class="fields">$email </span> </li>
+  <li> Jabber: <span class="fields">$jid </span> </li>
+  <li> Skype: <span class="fields">$lskype</span> </li>
   <li> Other contacts:
     <div id="multiline"> $othr  </div>
   </li>

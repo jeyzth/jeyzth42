@@ -14,6 +14,7 @@ from hashlib import sha256
 __all__ = ['TaskOne']
 
 from ming import schema as s
+
 from ming.odm import FieldProperty, ForeignIdProperty, RelationProperty
 from ming.odm import Mapper
 from ming.odm.declarative import MappedClass
@@ -32,7 +33,7 @@ class TaskOne(MappedClass):
     _id = FieldProperty(s.ObjectId)
     name = FieldProperty(s.String)
     lastname = FieldProperty(s.String)
-    dataofbird = FieldProperty(s.String)
+    dateofbird = FieldProperty(s.String)
     Bio = FieldProperty(s.String)
     email = FieldProperty(s.String)
     jabber = FieldProperty(s.String)
