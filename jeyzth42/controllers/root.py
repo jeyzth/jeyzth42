@@ -41,9 +41,9 @@ class RootController(BaseController):
     @expose('jeyzth42.templates.index')
     def index(self):
         """Handle the front-page."""
-        t1=TaskOne
-        jname=t1.name
-        return dict(title='This is may first page Jinja.',page='index.html',name=t1.name,lastname='Bezimenniy',
-           dayofbird=t1.dateofbird,bio=t1.bio,email=t1.email)
+        t1=TaskOne.query.get(name=u'Evgen');
+        
+        return dict(title='This is may first page Jinja.',page='index.html',name=t1.name,lastname=t1.lastname,
+           dateofbird=t1.dateofbird,bio=t1.bio,email=t1.email,skype=t1.skype, jabber=t1.jabber,othr=t1.othr)
         
 
