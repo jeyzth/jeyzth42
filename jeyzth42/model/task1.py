@@ -34,7 +34,7 @@ class TaskOne(MappedClass):
     name = FieldProperty(s.String)
     lastname = FieldProperty(s.String)
     dateofbird = FieldProperty(s.String)
-    Bio = FieldProperty(s.String)
+    bio = FieldProperty(s.String)
     email = FieldProperty(s.String)
     jabber = FieldProperty(s.String)
     skype = FieldProperty(s.String)

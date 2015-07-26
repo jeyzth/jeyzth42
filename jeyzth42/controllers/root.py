@@ -31,10 +31,9 @@ class RootController(BaseController):
     must be wrapped around with :class:`tg.controllers.WSGIAppController`.
 
     """
-    secc = SecureController()
-    admin = AdminController(model, None, config_type=TGAdminConfig)
-
-    error = ErrorController()
+#    secc = SecureController()
+#    admin = AdminController(model, None, config_type=TGAdminConfig)
+#    error = ErrorController()
 
     def _before(self, *args, **kw):
         tmpl_context.project_name = "jeyzth42"
@@ -42,6 +41,9 @@ class RootController(BaseController):
     @expose('jeyzth42.templates.index')
     def index(self):
         """Handle the front-page."""
-        return dict(title='This is may first page w Genshi.',page='index',name='Evgen',lastname='Bezimenniy',dayofbird='01.01.1973')
+        t1=TaskOne
+        jname=t1.name
+        return dict(title='This is may first page Jinja.',page='index.html',name=t1.name,lastname='Bezimenniy',
+           dayofbird=t1.dateofbird,bio=t1.bio,email=t1.email)
         
 

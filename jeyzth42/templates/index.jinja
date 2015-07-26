@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"  
       xmlns:py="http://genshi.edgewall.org/"
-      xmlns:xi="http://www.w3.org/2001/XInclude">
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      lang="en">
                                   
 <head>
     <meta content="text/html; charset=UTF-8"  http-equiv="content-type"  py:replace="''"/>
-    <title>42-test-jeyzth4#1  ${title}</title>
+    <title>42-test-jeyzth4#1  {{title}}</title>
                                                
 
 
@@ -63,11 +64,11 @@
 <h3> 42 Coffee Cups Test Assignment </h3>
 <div id="lcolumn">
 <ul>
-  <li> Name:<span class="sfields">${name} </span> </li>
-  <li> Last name:<span class="sfields">$lastname </span> </li>
-  <li> Date of Bird:<span class="sfields">$dateofbird </span> </li>
+  <li> Name:<span class="sfields">{{name}} </span> </li>
+  <li> Last name:<span class="sfields">{{lastname}} </span> </li>
+  <li> Date of Bird:<span class="sfields">{{dateofbird}} </span> </li>
   <li> Bio:
-    <div id="multiline">$bio</div>
+    <div id="multiline">{{bio}}</div>
   </li>
 </ul>
 </div>
@@ -75,14 +76,13 @@
 Contacts: 
 <ul>
   <li> Email:<span class="sfields">${email} </span> </li>
-  <li> Jabber: <span class="sfields">$jid </span> </li>
-  <li> Skype: <span class="sfields">$lskype</span> </li>
+  <li> Jabber: <span class="sfields">{{jid}} </span> </li>
+  <li> Skype: <span class="sfields">{{lskype}}</span> </li>
   <li> Other contacts:
     <div id="multiline"> $othr  </div>
   </li>
 </ul>
 </div>
 </div>
-
 </body>
 </html>
