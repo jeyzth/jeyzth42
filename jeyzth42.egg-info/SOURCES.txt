@@ -8,6 +8,7 @@ jeyzth42.egg-info/SOURCES.txt
 jeyzth42.egg-info/dependency_links.txt
 jeyzth42.egg-info/entry_points.txt
 jeyzth42.egg-info/not-zip-safe
+jeyzth42.egg-info/pbr.json
 jeyzth42.egg-info/requires.txt
 jeyzth42.egg-info/top_level.txt
 jeyzth42/config/__init__.py
@@ -26,6 +27,8 @@ jeyzth42/lib/helpers.py
 jeyzth42/model/__init__.py
 jeyzth42/model/auth.py
 jeyzth42/model/session.py
+jeyzth42/model/task1.py
+jeyzth42/public/cell10x10.gif
 jeyzth42/public/favicon.ico
 jeyzth42/public/css/bootstrap.min.css
 jeyzth42/public/css/style.css
@@ -37,13 +40,19 @@ jeyzth42/public/img/turbogears_logo.png
 jeyzth42/public/img/turbogears_logo_big.png
 jeyzth42/public/img/under_the_hood_blue.png
 jeyzth42/public/javascript/bootstrap.min.js
+jeyzth42/templates/42-.html
 jeyzth42/templates/__init__.py
 jeyzth42/templates/__init__.pyc
 jeyzth42/templates/about.jinja
 jeyzth42/templates/data.jinja
+jeyzth42/templates/edit.html
 jeyzth42/templates/environ.jinja
 jeyzth42/templates/error.jinja
+jeyzth42/templates/index.html~
 jeyzth42/templates/index.jinja
+jeyzth42/templates/index.jinja.my
+jeyzth42/templates/index.jinja.old
+jeyzth42/templates/index.jinja~
 jeyzth42/templates/login.jinja
 jeyzth42/templates/master.html
 jeyzth42/templates/master.jinja
