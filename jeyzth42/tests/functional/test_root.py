@@ -23,10 +23,10 @@ class TestRootController(TestController):
         """The front page is working properly"""
         response = self.app.get('/')
         msg = '42 Coffee Cups Test Assignment '
-        email = '@yahoo.com'
+        email = '@gmail.com'
         jabber = '@xmpp.jp'
         # You can look for specific strings:
-        ok_(msg in response and email in responce and jabber in responce, "There are no control frase here!" )
+        ok_(msg in response and email in response and jabber in response, "Evgen!\nThere are no control frase here!" )
 
         # You can also access a BeautifulSoup'ed response in your tests
         # (First run $ easy_install BeautifulSoup

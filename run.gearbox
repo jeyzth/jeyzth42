@@ -1,0 +1,13 @@
+#!/bin/sh
+rez=`ps ax | grep "gearbox" | grep -v "grep" | grep -v "run"`
+
+if [ -z "$rez" ] ;
+then
+  echo "Gerbox not found..."
+  echo "Start gearbox!"
+  gearbox serve --daemon
+else 
+  echo "rez:"$rez
+
+fi
+exit 0
