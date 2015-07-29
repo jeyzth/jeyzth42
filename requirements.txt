@@ -1,2 +1,8 @@
--i http://turbogears.org
-tg.devtools
+tg.devtools<=2.3.5 
+Babel
+Genshi
+ming>=0.4.3
+repoze.who
+tw2.forms
+tgext.admin
+jinja2
