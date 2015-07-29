@@ -1,6 +1,4 @@
--i http://turbogears.org
-tg.devtools
-TurboGears2 
+tg.devtools<=2.3.5 
 Babel
 Genshi
 ming>=0.4.3
