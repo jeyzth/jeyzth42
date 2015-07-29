@@ -20,11 +20,21 @@ body {
 
     #workspace {
       width: 960px ;
+      height: 300px;
       margin-right: auto;
       margin-left: auto;
       padding-left: 30 px;
       overflow: hidden;
+      border-bottom: 2px solid black;
+    }
 
+
+    #requests {
+      width: 960px ;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 30 px;
+      overflow: hidden;
     }
 
     #lcolumn {
@@ -75,13 +85,16 @@ body {
 
 <div id="workspace">
 <h3> 42 Coffee Cups Test Assignment </h3>
+<form>
 <div id="lcolumn">
 <ul>
-  <li> Name:<span class="sfields">{{name}} </span> </li>
-  <li> Surname:<span class="sfields">{{lastname}} </span> </li>
-  <li> Date of Bird:<span class="sfields">{{dateofbird}} </span> </li>
+  <li> Name:<span class="sfields"><input name="name" value={{name}}> </span> </li>
+  <li> Surname:<span class="sfields"><input name="lastname" value={{lastname}}> </span> </li>
+  <li> Date of Bird:<span class="sfields"><input name="dateofbird" value={{dateofbird}}> </span> </li>
   <li> Bio:
-    <div id="multiline">{{bio}}</div>
+    <div id="multiline">
+       <textarea wrap="soft" cols="20" rows="4" name="bio"> {{bio}} </textarea>
+    </div>
   </li>
 </ul>
 </div>
@@ -89,14 +102,23 @@ body {
 
 <ul>
   <li>Contacts:</li>
-  <li> Email:<span class="sfields">{{email}} </span> </li>
-  <li> Jabber: <span class="sfields">{{jabber}} </span> </li>
-  <li> Skype: <span class="sfields">{{skype}}</span> </li>
+  <li> Email:<span class="sfields"><input name="email" value={{email}}>     </span> </li>
+  <li> Jabber: <span class="sfields"><input name="jabber" value={{jabber}}> </span> </li>
+  <li> Skype: <span class="sfields"><input name="skype" value={{skype}} >   </span> </li>
   <li> Other contacts:
-    <div id="multiline"> {{othr}}  </div>
+    <div id="multiline"> 
+      <textarea wrap="soft" cols="20" rows="4" name="othr">
+         {{othr}}  
+      </textarea>
+    </div>
   </li>
 </ul>
 </div>
+
+</form>
+</div>
+<div id="requests">
+<a href="{{ tg.url('/requests') }}">requests</a>
 </div>
 </body>
 </html>
