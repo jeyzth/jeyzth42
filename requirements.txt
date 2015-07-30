@@ -1,4 +1,5 @@
 tg.devtools<=2.3.5 
+nose
 Babel
 Genshi
 ming>=0.4.3
