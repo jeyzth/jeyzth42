@@ -1,10 +1,11 @@
-PROJECT="/home/jeyzth/tg2env/jeyzth42"
-
-
+#PROJECT="/home/jeyzth/tg2env/jeyzth42"
+PROJECT="./"
+env:
+	./start.env 
 test:  
-	cd $(PROJECT) && ./start.env && ./run.gearbox && nosetests
+	cd $(PROJECT) && ./run.gearbox && nosetests
 run:
-	cd $(PROJECT) && ./start.env && ./run.gearbox
+	cd $(PROJECT) && ./run.gearbox
 stop:
 	cd $(PROJECT) && gearbox serve --stop-daemon
 	
