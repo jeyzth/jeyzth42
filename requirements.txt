@@ -1,9 +1,10 @@
-tg.devtools<=2.3.5 
+TurboGears2 <= 2.3.5
 nose
+beaker
 Babel
 Genshi
 ming>=0.4.3
 repoze.who
 tw2.forms
-tgext.admin
+tgext.admin >= 0.6.1
 jinja2
